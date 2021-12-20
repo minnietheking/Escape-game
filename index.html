@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./images/icon.png?v=1" />
+  <script type="text/javascript" src="jquery-3.3.1.min.js" ></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>runGame</title>
+</head>
+<body>
+<div id="container" >
+  <div id="scene_title" class="scene noselect"  style="z-index:11;" >
+    <div class="txt_guide" >Click to start</div>
+  </div>
+  <div id="scene_re" class="scene noselect"  style="z-index:9;" >
+    <div id="re_message" class="txt_message" >You Lose!</div>
+    <div class="txt_guide" >DEAD</div>
+  </div>
+  <div id="scene_clear" class="scene noselect"  style="z-index:7;" >
+    <div id="clear_message" class="txt_message" >SUCCESS!</div>
+  </div>
+  <div id="scene_effect" class="scene noselect"  style="z-index:5;" >
+  </div>
+  <div id="scene_txt" class="scene noselect"  style="z-index:4;" >
+    <div id="txt_distance" ></div>
+    <div id="txt_point" ></div>
+    <div class="gauge_edge">
+        <div id="gauge_hp" class="gauge"></div>
+    </div>
+  </div>
+
+  </canvas>
+  <canvas id="scene_obj" class="scene" width="1600px" height="900px"  style="z-index:3;" ></canvas>
+  <div id="scene_background" class="scene" style="z-index:0;" >
+    <div id="img_background"></div>
+  </div>
+</div>
+
+
+
+
+
+<script src="stage.js"></script>
+<script src="interval.js"></script>
+<script src="main.js"></script>
+
+
+
+</body></html>
